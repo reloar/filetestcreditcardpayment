@@ -1,0 +1,33 @@
+
+
+  <div class="card-container">
+    <button class="card card-small"
+    (click)="navigate()">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+
+      <span>Go to Payment</span>
+    </button>
+    <div></div>
+    <!-- <div *ngIf="CreditCardList" > -->
+      <div class="card card-large"  *ngFor="let card of CreditCardList">
+        <p>Card details: </p>
+<p>
+   {{card.amount}} ,
+  {{card.cardHolder}},
+  {{card.creditCardNumber}},
+  {{card.expirationDate}},
+  {{card.securityCode}},
+</p>
+
+
+
+
+
+    </div>
+    <!-- </div> -->
+
+
+  </div>
+
+
+
